@@ -24,11 +24,6 @@ conda activate yolov3
 conda install tensorflow==1.14.0 keras==2.2.4 pillow matplotlib
 ```
 
-* ライブラリのインストール
-```
-conda install tensorflow==1.14.0 keras==2.2.4 pillow matplotlib
-```
-
 * YOLOv3をgit cloneする
 ```
 git clone https://github.com/qqwweee/keras-yolo3.git
