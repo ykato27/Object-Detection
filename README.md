@@ -1,4 +1,4 @@
-# YOLO
+# Object-Detection-YOLO
 * YOLO(You Only Look Once) のexample プログラム
 
 ## YOLO とは
