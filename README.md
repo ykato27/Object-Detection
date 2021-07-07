@@ -2,6 +2,45 @@
 
 - Object-Detection のexample プログラム
 
+## リポジトリ構成
+```
+.
+├── README.md
+├── data
+├── models
+├── notebooks
+│   ├── CenterNet
+│   │   └── CenterNet_ObjectsAsPoints.ipynb
+│   ├── DETR
+│   │   └── DETR_demo.ipynb
+│   ├── Detectron2
+│   │   └── Detectron2_Tutorial.ipynb
+│   ├── EfficientDet
+│   │   └── EfficientDet_Tutorial.ipynb
+│   ├── RCNN
+│   │   ├── Detectron_MaskRCNN.ipynb
+│   │   ├── FasterRCNN+InceptionResNet_and_ssd+mobilenet.ipynb
+│   │   ├── Matterport_Mask_RCNN.ipynb
+│   │   └── Torchvision_Mask_RCNN.ipynb
+│   ├── SSD
+│   │   ├── FasterRCNN+InceptionResNet_and_ssd+mobilenet.ipynb
+│   │   └── SSD_nvidia_deeplearningexamples.ipynb
+│   └── YOLO
+│       ├── Scaled_YOLOv4_Train.ipynb
+│       ├── YOLOv4_Darknet_Train_2.ipynb
+│       ├── YOLOv5.ipynb
+│       ├── YOLOv5_Workers_example.ipynb
+│       └── YOLOv5_pytorch_train.ipynb
+├── pyproject.toml
+├── requirements.txt
+├── setup.cfg
+├── src
+│   └── __init__.py
+├── tests
+│   └── __init__.py
+└── work
+```
+
 ## YOLO とは
 
 - YOLO のバージョンはV.2からV.5まで存在(2021/7 現在)
