@@ -75,14 +75,6 @@
 
 - 2015年にMicrosoft が発明した物体検出アルゴリズムです。
 
-## リポジトリ構成
-
-```
-.
-├── README.md
-└── notebooks
-```
-
 ## 環境詳細
 
 - Google Colab
