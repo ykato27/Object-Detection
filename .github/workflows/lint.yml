@@ -1,6 +1,6 @@
 name: Lint                                                  # ワークフロー名
 on:                                                         # ワークフローの実行タイミング
-  push: 
+  push:
 
 jobs:                                                       # ワークフローは1つ以上のジョブから成る。ジョブは`jobs`の下で定義される
   run-lint:                                                 # このワークフローのジョブは、`run-lint`ひとつだけである。ジョブの参照名はなんでもよい
@@ -13,7 +13,7 @@ jobs:                                                       # ワークフロー
       - name: Set up Python                                 # 最新版のPythonをセットアップする
         uses: actions/setup-python@v2
         with:
-          python-version: "3.x"
+          python-version: "3.8"
 
       - name: Install linters                               # linterをインストールする
         run: |                                              # `run`の下にシェルコマンドで処理を記述する
@@ -25,7 +25,7 @@ jobs:                                                       # ワークフロー
           black .
           isort .
           flake8 .
-          
+
           nbqa black .
           nbqa isort .
           nbqa flake8 .
