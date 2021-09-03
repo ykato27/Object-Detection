@@ -7,30 +7,44 @@
 .
 ├── README.md
 ├── data
+├── docs
+│   ├── Date.md
+│   └── README.md
 ├── models
 ├── notebooks
 │   ├── CenterNet
-│   │   └── CenterNet_ObjectsAsPoints.ipynb
+│   │   ├── CenterNet_ObjectsAsPoints.ipynb
+│   │   └── CenterNet_ObjectsAsPoints_3D.ipynb
+│   ├── CenterTrack_Tracking_Objects_as_Points.ipynb
 │   ├── DETR
 │   │   └── DETR_demo.ipynb
 │   ├── Detectron2
 │   │   └── Detectron2_Tutorial.ipynb
 │   ├── EfficientDet
 │   │   └── EfficientDet_Tutorial.ipynb
+│   ├── Object_Detection_Inference_on_TF_2_and_TF_Hub.ipynb
 │   ├── RCNN
 │   │   ├── Detectron_MaskRCNN.ipynb
 │   │   ├── FasterRCNN+InceptionResNet_and_ssd+mobilenet.ipynb
+│   │   ├── Mask_R_CNN_Demo.ipynb
 │   │   ├── Matterport_Mask_RCNN.ipynb
 │   │   └── Torchvision_Mask_RCNN.ipynb
 │   ├── SSD
 │   │   ├── FasterRCNN+InceptionResNet_and_ssd+mobilenet.ipynb
 │   │   └── SSD_nvidia_deeplearningexamples.ipynb
-│   └── YOLO
-│       ├── Scaled_YOLOv4_Train.ipynb
-│       ├── YOLOv4_Darknet_Train_2.ipynb
-│       ├── YOLOv5.ipynb
-│       ├── YOLOv5_Workers_example.ipynb
-│       └── YOLOv5_pytorch_train.ipynb
+│   ├── YOLACT
+│   │   └── YOLACT_Eval.ipynb
+│   ├── YOLO
+│   │   ├── Scaled_YOLOv4_Train.ipynb
+│   │   ├── YOLOv4_Darknet_Train_2.ipynb
+│   │   ├── YOLOv4_DeepSort.ipynb
+│   │   ├── YOLOv4_Training_Tutorial.ipynb
+│   │   ├── YOLOv4_Tutorial.ipynb
+│   │   ├── YOLOv5.ipynb
+│   │   ├── YOLOv5_Workers_example.ipynb
+│   │   ├── YOLOv5_pytorch_train.ipynb
+│   │   └── Yolov5_DeepSort_Pytorch_tutorial.ipynb
+│   └── objdetect_tdmodels.ipynb
 ├── pyproject.toml
 ├── requirements.txt
 ├── setup.cfg
@@ -60,7 +74,7 @@
 
 - SSD モデルでは、デフォルト・ボックスという概念を使用します。
   - デフォルト・ボックスとは画像マップの各セルを中心とする４種類または６種類の（各辺の長さが異なる）四角形のことです。
-  - SSD　では、これらのうちサイズ38x38 、 19x19 、 10x10 、 5x5 、3x3 、 1x1 の特徴マップにおいて、各マップをデフォルト・ボックスで覆います。 
+  - SSD　では、これらのうちサイズ38x38 、 19x19 、 10x10 、 5x5 、3x3 、 1x1 の特徴マップにおいて、各マップをデフォルト・ボックスで覆います。
   - 従って、総数で8732個（38x4+19x6+10x6+5x6+３x４＋1x4)）のデフォルト・ボックスが存在します。
   - これらのボックスの中に何らかの物体が存在するか否かを調べて、その物体を識別します。
   - 物体識別の確率が最も高いデフォルト・ボックスだけを残し、それを物体検出のバウンディング・ボックスとします。
