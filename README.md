@@ -12,12 +12,16 @@
 │   └── README.md
 ├── models
 ├── notebooks
+│   ├── 07_single_shot_multibox_detector.ipynb
+│   ├── 3_10_MaskRCNN.ipynb
 │   ├── CenterNet
 │   │   ├── CenterNet_ObjectsAsPoints.ipynb
 │   │   └── CenterNet_ObjectsAsPoints_3D.ipynb
 │   ├── CenterTrack_Tracking_Objects_as_Points.ipynb
 │   ├── DETR
-│   │   └── DETR_demo.ipynb
+│   │   ├── DETR_demo.ipynb
+│   │   ├── DETR_hands_on.ipynb
+│   │   └── DETR_panoptic.ipynb
 │   ├── Detectron2
 │   │   └── Detectron2_Tutorial.ipynb
 │   ├── EfficientDet
@@ -36,11 +40,13 @@
 │   │   └── YOLACT_Eval.ipynb
 │   ├── YOLO
 │   │   ├── Scaled_YOLOv4_Train.ipynb
+│   │   ├── YOLOv3_Tutorial.ipynb
 │   │   ├── YOLOv4_Darknet_Train_2.ipynb
 │   │   ├── YOLOv4_DeepSort.ipynb
 │   │   ├── YOLOv4_Training_Tutorial.ipynb
 │   │   ├── YOLOv4_Tutorial.ipynb
 │   │   ├── YOLOv5.ipynb
+│   │   ├── YOLOv5_Tutorial.ipynb
 │   │   ├── YOLOv5_Workers_example.ipynb
 │   │   ├── YOLOv5_pytorch_train.ipynb
 │   │   └── Yolov5_DeepSort_Pytorch_tutorial.ipynb
