@@ -1,0 +1,134 @@
+class_names:
+- Fish
+data:
+  train:
+    ann_path: /content/train/annotations.json
+    img_path: /content/train/JPEGImages
+    input_size:
+    - 320
+    - 320
+    keep_ratio: true
+    name: CocoDataset
+    pipeline:
+      brightness: 0.2
+      contrast:
+      - 0.6
+      - 1.4
+      flip: 0.5
+      normalize:
+      - - 103.53
+        - 116.28
+        - 123.675
+      - - 57.375
+        - 57.12
+        - 58.395
+      perspective: 0.0
+      rotation: 0
+      saturation:
+      - 0.5
+      - 1.2
+      scale:
+      - 0.6
+      - 1.4
+      shear: 0
+      stretch:
+      - - 1
+        - 1
+      - - 1
+        - 1
+      translate: 0.2
+  val:
+    ann_path: /content/validation/annotations.json
+    img_path: /content/validation/JPEGImages
+    input_size:
+    - 320
+    - 320
+    keep_ratio: true
+    name: CocoDataset
+    pipeline:
+      normalize:
+      - - 103.53
+        - 116.28
+        - 123.675
+      - - 57.375
+        - 57.12
+        - 58.395
+device:
+  batchsize_per_gpu: 32
+  gpu_ids:
+  - 0
+  workers_per_gpu: 8
+evaluator:
+  name: CocoDetectionEvaluator
+  save_key: mAP
+log:
+  interval: 10
+model:
+  arch:
+    backbone:
+      activation: LeakyReLU
+      model_size: 1.0x
+      name: ShuffleNetV2
+      out_stages:
+      - 2
+      - 3
+      - 4
+    fpn:
+      in_channels:
+      - 116
+      - 232
+      - 464
+      name: PAN
+      num_outs: 3
+      out_channels: 96
+      start_level: 0
+    head:
+      feat_channels: 96
+      input_channel: 96
+      loss:
+        loss_bbox:
+          loss_weight: 2.0
+          name: GIoULoss
+        loss_dfl:
+          loss_weight: 0.25
+          name: DistributionFocalLoss
+        loss_qfl:
+          beta: 2.0
+          loss_weight: 1.0
+          name: QualityFocalLoss
+          use_sigmoid: true
+      name: NanoDetHead
+      norm_cfg:
+        type: BN
+      num_classes: 1
+      octave_base_scale: 5
+      reg_max: 7
+      scales_per_octave: 1
+      share_cls_reg: true
+      stacked_convs: 2
+      strides:
+      - 8
+      - 16
+      - 32
+    name: OneStageDetector
+save_dir: workspace/nanodet_m
+schedule:
+  lr_schedule:
+    gamma: 0.1
+    milestones:
+    - 240
+    - 260
+    - 275
+    name: MultiStepLR
+  optimizer:
+    lr: 0.14
+    momentum: 0.9
+    name: SGD
+    weight_decay: 0.0001
+  total_epochs: 280
+  val_intervals: 10
+  warmup:
+    name: linear
+    ratio: 0.1
+    steps: 300
+test: {}
