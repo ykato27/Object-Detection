@@ -62,12 +62,10 @@
 │               ├── nanodet.onnx
 │               └── results0.json
 ├── notebooks
-│   ├── 07_single_shot_multibox_detector.ipynb
-│   ├── 3_10_MaskRCNN.ipynb
 │   ├── CenterNet
 │   │   ├── CenterNet_ObjectsAsPoints.ipynb
-│   │   └── CenterNet_ObjectsAsPoints_3D.ipynb
-│   ├── CenterTrack_Tracking_Objects_as_Points.ipynb
+│   │   ├── CenterNet_ObjectsAsPoints_3D.ipynb
+│   │   └── CenterTrack_Tracking_Objects_as_Points.ipynb
 │   ├── DETR
 │   │   ├── DETR_demo.ipynb
 │   │   ├── DETR_hands_on.ipynb
@@ -78,35 +76,38 @@
 │   │   └── EfficientDet_Tutorial.ipynb
 │   ├── NanoDet
 │   │   └── NanoDet_GoogleColab_Training_Sample.ipynb
-│   ├── Object_Detection_Inference_on_TF_2_and_TF_Hub.ipynb
-│   ├── Object_detection_tf_hub.ipynb
 │   ├── RCNN
+│   │   ├── 3_10_MaskRCNN.ipynb
 │   │   ├── Detectron_MaskRCNN.ipynb
 │   │   ├── FasterRCNN+InceptionResNet_and_ssd+mobilenet.ipynb
 │   │   ├── Mask_R_CNN_Demo.ipynb
 │   │   ├── Matterport_Mask_RCNN.ipynb
 │   │   └── Torchvision_Mask_RCNN.ipynb
 │   ├── SSD
+│   │   ├── 07_single_shot_multibox_detector.ipynb
 │   │   ├── FasterRCNN+InceptionResNet_and_ssd+mobilenet.ipynb
 │   │   └── SSD_nvidia_deeplearningexamples.ipynb
+│   ├── TensorFlow_Hub_Object_Detection
+│   │   ├── Object_Detection_Inference_on_TF_2_and_TF_Hub.ipynb
+│   │   ├── Object_detection_tf_hub.ipynb
+│   │   └── objdetect_tdmodels.ipynb
 │   ├── Traffic_counting_with_OpenCV.ipynb
 │   ├── YOLACT
 │   │   └── YOLACT_Eval.ipynb
-│   ├── YOLO
-│   │   ├── YOLOv3_Tutorial.ipynb
-│   │   ├── YOLOv4.ipynb
-│   │   ├── YOLOv4_Darknet_Train_2.ipynb
-│   │   ├── YOLOv4_DeepSort.ipynb
-│   │   ├── YOLOv4_Scaled_Train.ipynb
-│   │   ├── YOLOv4_Training_Tutorial.ipynb
-│   │   ├── YOLOv4_Tutorial.ipynb
-│   │   ├── YOLOv5.ipynb
-│   │   ├── YOLOv5_DeepSort_Pytorch_tutorial.ipynb
-│   │   ├── YOLOv5_Tutorial.ipynb
-│   │   ├── YOLOv5_Workers_example.ipynb
-│   │   ├── YOLOv5_pytorch_train.ipynb
-│   │   └── YOLOv5_tutorials_roboflow.ipynb
-│   └── objdetect_tdmodels.ipynb
+│   └── YOLO
+│       ├── YOLOv3_Tutorial.ipynb
+│       ├── YOLOv4.ipynb
+│       ├── YOLOv4_Darknet_Train_2.ipynb
+│       ├── YOLOv4_DeepSort.ipynb
+│       ├── YOLOv4_Scaled_Train.ipynb
+│       ├── YOLOv4_Training_Tutorial.ipynb
+│       ├── YOLOv4_Tutorial.ipynb
+│       ├── YOLOv5.ipynb
+│       ├── YOLOv5_DeepSort_Pytorch_tutorial.ipynb
+│       ├── YOLOv5_Tutorial.ipynb
+│       ├── YOLOv5_Workers_example.ipynb
+│       ├── YOLOv5_pytorch_train.ipynb
+│       └── YOLOv5_tutorials_roboflow.ipynb
 ├── pyproject.toml
 ├── requirements.txt
 ├── setup.cfg
