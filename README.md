@@ -95,6 +95,10 @@
 
 - 2015年にMicrosoft が発明した物体検出アルゴリズムです。
 
+## NanoDet とは
+
+- NanoDetは、超高速で軽量のモバイルアンカーフリーターゲット検出モデル
+
 ## Display notebooks
 
 - [View Jupyter notebooks in nbviewer](https://nbviewer.jupyter.org/github/ykato27/Object-Detection/tree/main/notebooks/)
