@@ -6,11 +6,61 @@
 ```
 .
 ├── README.md
+├── config
+│   └── NanoDet
+│       ├── nanodet-m-original.yml
+│       └── nanodet-m.yml
 ├── data
+│   └── NanoDet
+│       ├── Annotations
+│       ├── ImageSets
+│       │   └── Main
+│       │       ├── Fish_train.txt
+│       │       └── Fish_val.txt
+│       ├── JPEGImages
+│       └── pascal_label_map.pbtxt
 ├── docs
 │   ├── Date.md
 │   └── README.md
 ├── models
+│   └── NanoDet
+│       └── workspace
+│           └── nanodet_m
+│               ├── NanoDet
+│               │   └── 2021-11-26-07-32-21
+│               │       └── checkpoints
+│               │           └── epoch=279-step=279.ckpt
+│               ├── logs-2021-11-26-07-32-21
+│               │   ├── Train_loss_loss_bbox_Train
+│               │   │   └── events.out.tfevents.1637911958.732dd71f9eb4.171.3
+│               │   ├── Train_loss_loss_dfl_Train
+│               │   │   └── events.out.tfevents.1637911958.732dd71f9eb4.171.4
+│               │   ├── Train_loss_loss_qfl_Train
+│               │   │   └── events.out.tfevents.1637911958.732dd71f9eb4.171.2
+│               │   ├── Train_loss_lr_Train
+│               │   │   └── events.out.tfevents.1637911956.732dd71f9eb4.171.1
+│               │   ├── Val_metrics_AP_50_Val
+│               │   │   └── events.out.tfevents.1637911972.732dd71f9eb4.171.6
+│               │   ├── Val_metrics_AP_75_Val
+│               │   │   └── events.out.tfevents.1637911972.732dd71f9eb4.171.7
+│               │   ├── Val_metrics_AP_l_Val
+│               │   │   └── events.out.tfevents.1637911972.732dd71f9eb4.171.10
+│               │   ├── Val_metrics_AP_m_Val
+│               │   │   └── events.out.tfevents.1637911972.732dd71f9eb4.171.9
+│               │   ├── Val_metrics_AP_small_Val
+│               │   │   └── events.out.tfevents.1637911972.732dd71f9eb4.171.8
+│               │   ├── Val_metrics_mAP_Val
+│               │   │   └── events.out.tfevents.1637911972.732dd71f9eb4.171.5
+│               │   ├── events.out.tfevents.1637911956.732dd71f9eb4.171.0
+│               │   ├── logs.txt
+│               │   └── train_cfg.yml
+│               ├── logs.txt
+│               ├── model_best
+│               │   ├── eval_results.txt
+│               │   └── model_best.ckpt
+│               ├── model_last.ckpt
+│               ├── nanodet.onnx
+│               └── results0.json
 ├── notebooks
 │   ├── 07_single_shot_multibox_detector.ipynb
 │   ├── 3_10_MaskRCNN.ipynb
@@ -26,7 +76,10 @@
 │   │   └── Detectron2_Tutorial.ipynb
 │   ├── EfficientDet
 │   │   └── EfficientDet_Tutorial.ipynb
+│   ├── NanoDet
+│   │   └── NanoDet_GoogleColab_Training_Sample.ipynb
 │   ├── Object_Detection_Inference_on_TF_2_and_TF_Hub.ipynb
+│   ├── Object_detection_tf_hub.ipynb
 │   ├── RCNN
 │   │   ├── Detectron_MaskRCNN.ipynb
 │   │   ├── FasterRCNN+InceptionResNet_and_ssd+mobilenet.ipynb
@@ -36,26 +89,31 @@
 │   ├── SSD
 │   │   ├── FasterRCNN+InceptionResNet_and_ssd+mobilenet.ipynb
 │   │   └── SSD_nvidia_deeplearningexamples.ipynb
+│   ├── Traffic_counting_with_OpenCV.ipynb
 │   ├── YOLACT
 │   │   └── YOLACT_Eval.ipynb
 │   ├── YOLO
-│   │   ├── Scaled_YOLOv4_Train.ipynb
 │   │   ├── YOLOv3_Tutorial.ipynb
+│   │   ├── YOLOv4.ipynb
 │   │   ├── YOLOv4_Darknet_Train_2.ipynb
 │   │   ├── YOLOv4_DeepSort.ipynb
+│   │   ├── YOLOv4_Scaled_Train.ipynb
 │   │   ├── YOLOv4_Training_Tutorial.ipynb
 │   │   ├── YOLOv4_Tutorial.ipynb
 │   │   ├── YOLOv5.ipynb
+│   │   ├── YOLOv5_DeepSort_Pytorch_tutorial.ipynb
 │   │   ├── YOLOv5_Tutorial.ipynb
 │   │   ├── YOLOv5_Workers_example.ipynb
 │   │   ├── YOLOv5_pytorch_train.ipynb
-│   │   └── Yolov5_DeepSort_Pytorch_tutorial.ipynb
+│   │   └── YOLOv5_tutorials_roboflow.ipynb
 │   └── objdetect_tdmodels.ipynb
 ├── pyproject.toml
 ├── requirements.txt
 ├── setup.cfg
 ├── src
-│   └── __init__.py
+│   ├── __init__.py
+│   └── voc2coco
+│       └── voc2coco.py
 ├── tests
 │   └── __init__.py
 └── work
