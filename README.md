@@ -162,6 +162,13 @@
 
 - YOLACTはインスタンスセグメンテーションアルゴリズムの一種です。
 
+## DETR（DEtection Transformer）
+
+- Transformerを物体検出にはじめて取り入れた手法
+- 2020年５月にFacebookから発表
+- Encoder-Decoder型Transformerを使った初めての物体検出モデル
+- End-to-endなモデルを実現し、人手によるハイパーパラメータの設計を大幅に削減することに成功
+
 ## Display notebooks
 
 - [View Jupyter notebooks in nbviewer](https://nbviewer.jupyter.org/github/ykato27/Object-Detection/tree/main/notebooks/)
