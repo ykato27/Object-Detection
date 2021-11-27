@@ -158,6 +158,10 @@
 
 - NanoDetは、超高速で軽量のモバイルアンカーフリーターゲット検出モデル
 
+## YOLACT とは
+
+- YOLACTはインスタンスセグメンテーションアルゴリズムの一種です。
+
 ## Display notebooks
 
 - [View Jupyter notebooks in nbviewer](https://nbviewer.jupyter.org/github/ykato27/Object-Detection/tree/main/notebooks/)
