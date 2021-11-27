@@ -11,8 +11,8 @@ import torch.nn.functional as F
 # handbook
 # from torch.autograd import Variable
 # handbook
-from layers import *
-from data import voc, coco
+from src.ssd.layers import *
+from data.SSD import voc, coco
 import os
 
 
